@@ -1,0 +1,22 @@
+{
+  "name": "fp-magic",
+  "version": "0.0.2",
+  "description": "Functional programming in javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikalexxx/fp-magic.git"
+  },
+  "keywords": [
+    "functor"
+  ],
+  "author": "Alexandr Nikolaichev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikalexxx/fp-magic/issues"
+  },
+  "homepage": "https://github.com/nikalexxx/fp-magic#readme"
+}
