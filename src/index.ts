@@ -1,6 +1,6 @@
 const valueSymbol = Symbol('value');
 
-type WrapperObject = Record<string | symbol, unknown>;
+export type WrapperObject = Record<string | symbol, unknown>;
 
 function isObject(x: unknown): x is WrapperObject {
     return x === new Object(x);
