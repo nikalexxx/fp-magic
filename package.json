@@ -1,22 +1,37 @@
 {
   "name": "fp-magic",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Functional programming in javascript",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "rm -Rf dist; tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nikalexxx/fp-magic.git"
   },
   "keywords": [
-    "functor"
+    "functor",
+    "function"
   ],
   "author": "Alexandr Nikolaichev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nikalexxx/fp-magic/issues"
   },
-  "homepage": "https://github.com/nikalexxx/fp-magic#readme"
+  "homepage": "https://github.com/nikalexxx/fp-magic#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.2",
+    "typescript": "^4.3.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleDirectories": ["node_modules", "src"],
+    "rootDir": "src"
+}
 }
